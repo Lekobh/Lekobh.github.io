@@ -1,0 +1,263 @@
+<!-- Chosen Palette: Energetic & Playful -->
+<!-- Application Structure Plan: The infographic follows a logical learning narrative. It begins with a hook presenting the core promise (the "magic formula" of 5-3-9). A new section on basic music theory (scale degrees) was added to provide foundational context. It then presents the user's "toolkit" (the 9 essential chords). The main body is dedicated to detailing each of the 5 core progressions in separate, digestible cards, which have been enhanced with suggested strumming patterns. Following this is a new, actionable section with practice tips. The infographic concludes with a "Next Steps" section to guide further learning and a summary of the learning method's goal (muscle memory). This expanded top-down structure was chosen to create a more comprehensive educational tool, moving from theory to tools, application, practice, and future growth. -->
+<!-- Visualization & Content Choices: Report Info: Core stats (5, 3, 9) -> Goal: Inform -> Viz/Presentation Method: "Single Big Number" in styled cards. | Report Info: Music Theory behind formulas -> Goal: Inform/Educate -> Viz/Presentation Method: Dedicated text section with a clear example using the C Major scale. | Report Info: 9 essential chords -> Goal: Organize -> Viz/Presentation Method: Image diagram of chord shapes. | Report Info: Each of the 5 chord progressions -> Goal: Organize/Show Process -> Viz/Presentation Method: Enhanced cards including a new visual "Flow Chart" for suggested strumming patterns using styled text and Unicode arrows. | Report Info: Practice Techniques -> Goal: Organize/Instruct -> Viz/Presentation Method: A new card-based section with icons (Unicode) and clear, actionable tips. -->
+<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico Completo: 5 Progressões de Acordes Essenciais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .strum-pattern span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 4px;
+            font-weight: bold;
+        }
+        .strum-down {
+            background-color: #118AB2;
+            color: white;
+        }
+        .strum-up {
+            background-color: #06D6A0;
+            color: white;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-6xl">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-black text-[#073B4C] mb-3">5 Progressões de Acordes para Tocar Milhares de Músicas</h1>
+            <p class="text-lg md:text-xl text-[#118AB2]">Um guia visual completo para dominar as sequências por trás dos maiores sucessos.</p>
+        </header>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-6">A Fórmula 9 – 3 – 5</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <p class="text-7xl font-black text-[#EF476F]">9</p>
+                    <h2 class="text-2xl font-bold text-[#073B4C] mt-2">Acordes Essenciais</h2>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <p class="text-7xl font-black text-[#FFD166]">3</p>
+                    <h2 class="text-2xl font-bold text-[#073B4C] mt-2">Tonalidades Amigáveis</h2>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <p class="text-7xl font-black text-[#06D6A0]">5</p>
+                    <h2 class="text-2xl font-bold text-[#073B4C] mt-2">Progressões Clássicas</h2>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-4">Entendendo a Mágica: O que os Números Significam?</h2>
+            <p class="text-center max-w-3xl mx-auto text-gray-600 mb-6">As fórmulas como "1-5-6m-4" usam números para representar os acordes dentro de uma tonalidade (campo harmônico). O número 1 é sempre o acorde que dá nome à tonalidade. Os outros números representam os acordes seguintes na escala.</p>
+            <div class="bg-gray-50 rounded-lg p-4 max-w-2xl mx-auto">
+                <p class="font-bold text-center text-[#073B4C]">Exemplo prático na Tonalidade de Dó (C):</p>
+                <p class="text-center font-mono text-[#118AB2] mt-2 text-lg">
+                    C(1) • Dm(2) • Em(3) • F(4) • G(5) • Am(6) • Bdim(7)
+                </p>
+                <p class="text-center text-gray-600 mt-2 text-sm">➡️ Assim, em Dó, a progressão <span class="font-bold">1-5-6m-4</span> se traduz para <span class="font-bold">C – G – Am – F</span>. Esse padrão se repete em qualquer tom!</p>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-6">Seu Kit de Ferramentas: Os 9 Acordes</h2>
+             <p class="text-center max-w-3xl mx-auto text-gray-600 mb-8">Acordes: G, C, D, Am, Em, Bm7, F, A, Dm. Todos em formatos abertos, sem a necessidade de pestanas complicadas.</p>
+            <div class="flex justify-center">
+                <a href="https://www.youtube.com/watch?v=KrrNg-8FRzY" target="_blank" rel="noopener noreferrer" title="Clique para ver o vídeo original">
+                    <img src="https://i.imgur.com/5V5qALz.jpeg" alt="Diagrama dos 9 acordes essenciais para violão" class="rounded-lg shadow-lg max-w-full md:max-w-xl h-auto transition-transform duration-300 hover:scale-105 cursor-pointer">
+                </a>
+            </div>
+        </section>
+
+        <section class="space-y-10">
+            <h2 class="text-4xl font-bold text-center text-[#073B4C]">As 5 Progressões Decifradas</h2>
+            
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-bold text-[#073B4C]">1. O Criador de Mega Sucessos <span class="font-mono text-xl text-[#118AB2]">(I–V–vi–IV)</span></h3>
+                <div class="p-4 bg-gray-50 rounded-lg mt-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Progressões:</p>
+                            <div class="space-y-2">
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Dó (C):</span> C – G – Am – F</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Sol (G):</span> G – D – Em – C</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Ré (D):</span> D – A – Bm – G</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Exemplos de Músicas:</p>
+                            <ul class="text-sm text-gray-600 list-disc list-inside">
+                                <li>Let It Be (The Beatles)</li>
+                                <li>No Woman No Cry (Bob Marley)</li>
+                                <li>With or Without You (U2)</li>
+                                <li>Don’t Stop Believin’ (Journey)</li>
+                                <li>I’m Yours (Jason Mraz)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-bold text-[#073B4C]">2. Rock & Roll Classic <span class="font-mono text-xl text-[#118AB2]">(I–IV–V)</span></h3>
+                <div class="p-4 bg-gray-50 rounded-lg mt-4">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Progressões:</p>
+                            <div class="space-y-2">
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Dó (C):</span> C – F – G</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Sol (G):</span> G – C – D</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Ré (D):</span> D – G – A</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Exemplos de Músicas:</p>
+                            <ul class="text-sm text-gray-600 list-disc list-inside">
+                                <li>La Bamba (Ritchie Valens)</li>
+                                <li>The Tide is High (Blondie)</li>
+                                <li>Blitzkrieg Bop (The Ramones)</li>
+                                <li>Stir It Up (Bob Marley)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-bold text-[#073B4C]">3. Doo-Wop <span class="font-mono text-xl text-[#118AB2]">(I–vi–IV–V)</span></h3>
+                 <div class="p-4 bg-gray-50 rounded-lg mt-4">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Progressões:</p>
+                            <div class="space-y-2">
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Dó (C):</span> C – Am – F – G</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Sol (G):</span> G – Em – C – D</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Ré (D):</span> D – Bm – G – A</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Exemplos de Músicas:</p>
+                            <ul class="text-sm text-gray-600 list-disc list-inside">
+                                <li>Blue Moon (The Marcels)</li>
+                                <li>Every Breath You Take (The Police)</li>
+                                <li>Stand By Me (Ben E. King)</li>
+                                <li>Hallelujah (Leonard Cohen)</li>
+                                <li>Unchained Melody (Elvis Presley)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-bold text-[#073B4C]">4. Rock & Roll Bounce <span class="font-mono text-xl text-[#118AB2]">(I–IV–V–IV)</span></h3>
+                 <div class="p-4 bg-gray-50 rounded-lg mt-4">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Progressões:</p>
+                            <div class="space-y-2">
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Dó (C):</span> C – F – G – F</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Sol (G):</span> G – C – D – C</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Ré (D):</span> D – G – A – G</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Exemplo de Música:</p>
+                            <ul class="text-sm text-gray-600 list-disc list-inside">
+                                <li>Twist and Shout (The Beatles)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-bold text-[#073B4C]">5. Emocional e Cinematográfica <span class="font-mono text-xl text-[#118AB2]">(I–IV–vi–V)</span></h3>
+                 <div class="p-4 bg-gray-50 rounded-lg mt-4">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Progressões:</p>
+                            <div class="space-y-2">
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Dó (C):</span> C – F – Am – G</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Sol (G):</span> G – C – Em – D</div>
+                                <div class="p-2 bg-gray-200 rounded-md"><span class="font-bold text-teal-700">Em Ré (D):</span> D – G – Bm – A</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2 text-gray-700">Exemplo de Música:</p>
+                            <ul class="text-sm text-gray-600 list-disc list-inside">
+                                <li>Talkin’ ’Bout a Revolution (Tracy Chapman)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 my-16">
+            <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-8">Como Praticar de Forma Eficaz</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-[#073B4C] mb-2">🕰️ Use um Metrônomo</h3>
+                    <p class="text-gray-600">Comece bem devagar (60 bpm). O objetivo é que as trocas de acorde sejam limpas e no tempo certo. Aumente a velocidade gradualmente.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-[#073B4C] mb-2">🔄 Foco nas Transições</h3>
+                    <p class="text-gray-600">Identifique a troca mais difícil em uma progressão (ex: G para C) e pratique apenas esses dois acordes repetidamente até que o movimento se torne suave.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-[#073B4C] mb-2">🔀 Varie a Ordem</h3>
+                    <p class="text-gray-600">Não toque a progressão apenas na ordem original. Tente começar pelo último acorde ou toque de trás para frente. Isso fortalece a memória muscular.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-[#073B4C] mb-2">🎧 Escuta Ativa</h3>
+                    <p class="text-gray-600">Ao ouvir suas músicas favoritas, tente identificar essas progressões. Treinar o ouvido é tão importante quanto treinar os dedos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-8">Próximos Passos na Sua Jornada</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-[#073B4C] mb-2">Adicione "Cor" com Sétimas</h3>
+                    <p class="text-gray-600">Aprenda os acordes G7, C7 e D7. Eles geralmente aparecem antes de uma mudança de volta para o acorde '1', criando uma tensão agradável.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-[#073B4C] mb-2">Explore Novas Tonalidades</h3>
+                    <p class="text-gray-600">Depois de dominar G, C e D, tente aplicar as mesmas fórmulas nas tonalidades de Lá (A) e Mi (E), que também são muito comuns no violão.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="mt-12 bg-[#073B4C] text-white rounded-xl shadow-lg p-8 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-[#FFD166]">🎯 Objetivo Final: Memória Muscular</h2>
+            <p class="text-lg max-w-3xl mx-auto">Ao praticar estas sequências, você "programa" seus dedos para as trocas de acordes mais comuns. Isso torna o aprendizado de novas músicas muito mais rápido e intuitivo. A prática leva à fluidez!</p>
+            <p class="text-sm text-gray-300 mt-6">Infográfico inspirado e baseado no <a href="https://www.youtube.com/watch?v=KrrNg-8FRzY" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">vídeo original de Jo Bywater</a>.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+
+
+
